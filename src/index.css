@@ -7,7 +7,8 @@
 
   
   --color-background: #0B0C10;
-  --color-background-badge: #1C1E26;
+  --color-background-secondary: #1C1E26;
+  --color-border: #363840;
 }
 
 :root {
@@ -18,7 +19,7 @@
   --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
   --mono: ui-monospace, Consolas, monospace;
 
-  font: 16px var(--sans);
+  font: 18px var(--sans);
   color: var(--color-text);
   background: var(--color-background);
 
