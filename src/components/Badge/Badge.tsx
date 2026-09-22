@@ -1,6 +1,6 @@
 import type { ComponentType, JSX } from "react";
 
-interface IBadge {
+export interface IBadge {
   text: string
   icon: ComponentType<{ className?: string }>
 }
