@@ -19,7 +19,7 @@
   --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
   --mono: ui-monospace, Consolas, monospace;
 
-  font: 18px var(--sans);
+  font: 16px var(--sans);
   color: var(--color-text);
   background: var(--color-background);
 

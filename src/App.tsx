@@ -1,22 +1,21 @@
 import { Header } from "./components/Header/Header"
-import { ProfileDescription } from "./components/ProfileDescription/ProfileDescription"
-import { ProfileImage } from "./components/ProfileImage/ProfileImage"
+import { Hero } from "./components/Hero/Hero"
+import { Projects } from "./components/Projects/Projects"
 
 function App() {
 
   return (
-    <div className="flex min-h-svh flex-col p-10">
+    <div className="flex min-h-svh flex-col">
 
       <Header />
 
-      <main className="flex w-full flex-1 justify-center items-center">
-        <section className="flex w-full max-w-6xl h-full justify-around">
-          <ProfileImage />
-          <ProfileDescription />
-        </section>
-
-
-
+      <main className="w-auto h-full flex flex-col">
+        <Hero />
+        {/* Experiencia. Comentar que solo la experiencia ha sido de prácticas universitarias, de octubre a diciembre en Acid Tango */}
+        <Projects />
+        {/* Estudios */}
+        {/* Contactar enviando un correo */}
+        {/* Intentar hacer algún easter egg o algo? */}
       </main>
 
       <footer>
@@ -25,6 +24,7 @@ function App() {
 
     </div>
   )
+
 }
 
 export default App
