@@ -1,4 +1,5 @@
 import { projectsData } from "../../data/data";
+import { ContainerSection } from "../ContainerSection/ContainerSection";
 import { Section } from "../Section/Section";
 import { ProjectCard } from "./ProjectCard";
 
@@ -6,8 +7,12 @@ export function Projects() {
   return (
     <Section>
 
-      <div className="max-w-5xl mx-auto">
+      <ContainerSection>
+        <div className="flex flex-col gap-2">
         <h2 className="text-primary text-4xl font-bold">Proyectos</h2>
+        <h3 className="text-xl">Trabajos realizados</h3>
+
+        </div>
         <div className="flex flex-col mt-5 gap-6">
           {projectsData.map((project) => (
             <ProjectCard
@@ -19,7 +24,7 @@ export function Projects() {
               href={project.href} />
           ))}
         </div>
-      </div>
+      </ContainerSection>
     </Section>
 
   )

@@ -37,7 +37,7 @@ export const contactsLink = [
 
 export const projectsData = [{
   title: "Plataforma Full-Stack para Simulación Industrial y Detección de fugas",
-  description: "Plataforma Full-Stack para la simulación de una estación de servicio y detección de fugas mediante Machine Learning.\
+  description: "Mi trabajo de Fin de Grado consistió en una plataforma Full-Stack para la simulación de una estación de servicio y detección de fugas mediante Machine Learning.\
    Incluye una interfaz web para configurar y visualizar simulaciones, una CLI\
     y soporte de comunicación mediante memoria, sockets y OPC-UA, permitiendo conectar \
     sistemas simulados con controladoras físicas o virtuales.",
@@ -53,3 +53,14 @@ export const projectsData = [{
   ]
 }
 ]
+
+export const experiencesJob = [{
+  title: "Desarrollador Web y Mobile - Prácticas Universitarias",
+  subtitle: "Acid Tango S.L.",
+  description: "Realicé mis prácticas universitarias en Acid Tango, una empresa española especializada en el diseño y desarrollo de productos \
+  digitales y soluciones de software. \
+  Durante este periodo, participé en tres proyectos de la empresa, desempeñando el rol de Desarrollador Frontend en los dos primeros y \
+  de Desarrollador Mobile utilizando Android Studio en el último.",
+  startDate: new Date(2025, 9, 1),
+  endDate: new Date(2025, 11, 1)
+}]
