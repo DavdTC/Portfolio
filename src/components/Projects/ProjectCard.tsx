@@ -18,7 +18,8 @@ export function ProjectCard({ title, description, img, href, badges }: IProjectC
       </div>
       <div className="w-1/2 flex flex-col p-4 gap-4">
         <h3 className="text-lg">{title}</h3>
-        <p className="text-sm">{description}</p>
+        <hr className="border-border" />
+        <p className="text-muted">{description}</p>
         <div className="flex flex-wrap gap-2">
           {badges.map((badge) => (
             <Badge key={badge.text} text={badge.text} icon={badge.icon} />
