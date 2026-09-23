@@ -64,3 +64,20 @@ export const experiencesJob = [{
   startDate: new Date(2025, 9, 1),
   endDate: new Date(2025, 11, 1)
 }]
+
+export const academic = [
+  {
+    startDate: new Date(2026, 10, 1),
+    endDate: null,
+    title: "Programa Diginnova - FGULL (Fundación General de la Universidad de La Laguna)"
+  },
+  {
+    startDate: new Date(2021, 8, 1),
+    endDate: new Date(2026, 5, 1),
+    title: "Grado de Ingeniería Informática, Tecnologías de la Información - Universidad de La Laguna"
+  }, {
+    startDate: new Date(2019, 8, 1),
+    endDate: new Date(2021, 5, 1),
+    title: "Bachillerato de Ciencias Tecnológicas - IES Teobaldo Power"
+  }
+]

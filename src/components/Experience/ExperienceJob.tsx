@@ -1,3 +1,4 @@
+import { dateFormatter } from "../../utils/utils"
 import { ExperienceCard } from "./ExperienceCard"
 
 interface IExperienceJob {
@@ -9,13 +10,6 @@ interface IExperienceJob {
 }
 
 export function ExperienceJob({ title, subtitle, startDate, endDate, description }: IExperienceJob) {
-
-  const dateFormatter = new Intl.DateTimeFormat("es", {
-    year: "numeric",
-    month: "long"
-  })
-
-  console.log(startDate)
   return (
     <div className="grid grid-cols-[1fr_40px_1fr] mt-5">
       <ExperienceCard

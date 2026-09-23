@@ -1,16 +1,16 @@
 import { projectsData } from "../../data/data";
 import { ContainerSection } from "../ContainerSection/ContainerSection";
 import { Section } from "../Section/Section";
+import { TitleSection } from "../TitleSection/TitleSection";
 import { ProjectCard } from "./ProjectCard";
 
-export function Projects() {
+export function ProjectsSection() {
   return (
     <Section>
 
       <ContainerSection>
         <div className="flex flex-col gap-2">
-        <h2 className="text-primary text-4xl font-bold">Proyectos</h2>
-        <h3 className="text-xl">Trabajos realizados</h3>
+          <TitleSection title="Proyectos" subtitle="Trabajos realizados"/>
 
         </div>
         <div className="flex flex-col mt-5 gap-6">

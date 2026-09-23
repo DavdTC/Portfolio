@@ -1,14 +1,15 @@
 import { Badge } from "../Badge/Badge";
 import { ButtonLink } from "../ButtonLink/ButtonLink";
 import { badgesProfile, contactsLink } from "../../data/data";
+import { TitleSection } from "../TitleSection/TitleSection";
 
 export function ProfileDescription() {
 
   return (
     <div className="flex flex-col text-left w-auto max-w-xl gap-4 ">
+
       <div className="flex flex-col gap-2 mb-5">
-        <h2 className="text-primary text-4xl font-bold">Sobre mi</h2>
-        <h3 className="text-xl">Desarrollador Frontend y Backend</h3>
+        <TitleSection title="Sobre mi" subtitle="Desarrollador Frontend y Backend" />
         <p className="text-muted"> Ingeniero informático centralizado en desarrollo de aplicaciones web centradas en el usuario, combinando código limpio con interfaces bien pensadas. Me interesa construir productos que resuelvan problemas reales de forma elegante. bla bla bla</p>
       </div>
 
