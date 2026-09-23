@@ -1,15 +1,15 @@
 import { experiencesJob } from "../../data/data";
 import { ContainerSection } from "../ContainerSection/ContainerSection";
 import { Section } from "../Section/Section";
+import { TitleSection } from "../TitleSection/TitleSection";
 import { ExperienceJob } from "./ExperienceJob";
 
-export function Experience() {
+export function ExperienceSection() {
   return (
     <Section>
       <ContainerSection>
         <div className="w-full flex flex-col gap-2">
-          <h2 className="text-primary text-4xl font-bold">Experiencia</h2>
-          <h3 className="text-xl">Experiencia profesional</h3>
+          <TitleSection title="Experiencia" subtitle="Experiencia profesional" />
 
           {experiencesJob.map((job) => (
             <ExperienceJob

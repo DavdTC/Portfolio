@@ -1,7 +1,8 @@
-import { Experience } from "./components/Experience/Experience"
+import { EducationSection } from "./components/Education/EducationSection"
+import { ExperienceSection } from "./components/Experience/ExperienceSection"
 import { Header } from "./components/Header/Header"
 import { Hero } from "./components/Hero/Hero"
-import { Projects } from "./components/Projects/Projects"
+import { ProjectsSection } from "./components/Projects/ProjectSection"
 
 function App() {
 
@@ -12,9 +13,9 @@ function App() {
 
       <main className="w-auto h-full flex flex-col">
         <Hero />
-        <Experience />
-        <Projects />
-        {/* Estudios */}
+        <ExperienceSection />
+        <ProjectsSection />
+        <EducationSection />
         {/* Contactar enviando un correo */}
         {/* Intentar hacer algún easter egg o algo? */}
       </main>
