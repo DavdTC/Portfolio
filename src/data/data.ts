@@ -67,7 +67,7 @@ export const experiencesJob = [{
 
 export const academic = [
   {
-    startDate: new Date(2026, 10, 1),
+    startDate: new Date(2026, 8, 1),
     endDate: null,
     title: "Programa Diginnova - FGULL (Fundación General de la Universidad de La Laguna)"
   },

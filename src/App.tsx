@@ -1,3 +1,4 @@
+import { ContactSection } from "./components/ContactSection/ContactSection"
 import { EducationSection } from "./components/Education/EducationSection"
 import { ExperienceSection } from "./components/Experience/ExperienceSection"
 import { Header } from "./components/Header/Header"
@@ -16,7 +17,7 @@ function App() {
         <ExperienceSection />
         <ProjectsSection />
         <EducationSection />
-        {/* Contactar enviando un correo */}
+        <ContactSection />
         {/* Intentar hacer algún easter egg o algo? */}
       </main>
 
