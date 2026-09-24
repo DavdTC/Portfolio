@@ -15,14 +15,14 @@ export function InputText({ id, name, title, type, value, placeholder, onChange 
 
   return (
     <div className="w-full flex flex-col gap-2">
-      <label htmlFor={id} className="text-sm text-muted">
+      <label htmlFor={id} className="text-sm text-muted max-w-max">
         {title}
       </label>
       <input
         id={id}
         name={name}
         type={type}
-        className="bg-background-secondary text-sm border border-border rounded-lg p-2 focus:border-primary"
+        className="bg-background-secondary text-sm border border-border rounded-lg p-2 focus:border-primary focus:outline-0"
         placeholder={placeholder}
         onChange={onChange}
         value={value}
