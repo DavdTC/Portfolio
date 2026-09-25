@@ -1,0 +1,71 @@
+{
+  "navigation": {
+    "aboutMe": "Sobre mí",
+    "experience": "Experiencia",
+    "projects": "Proyectos",
+    "education": "Educación",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "profileImage": {
+      "occupation": "Desarrollador web",
+      "name": "David Ezequiel Tolosa Cabalero",
+      "alt": "Fotografía de David Ezequiel Tolosa Cabalero"
+    },
+    "profileDescription": {
+      "title": "Sobre mí",
+      "subtitle": "Desarrollador Frontend y Backend",
+      "description": "Ingeniero informático especializado en desarrollo de aplicaciones web centradas en el usuario, combinando código limpio con interfaces bien pensadas. Me interesa construir productos que resuelvan problemas reales de forma elegante."
+    }
+  },
+  "experience": {
+    "title": "Experiencia",
+    "subtitle": "Experiencia profesional",
+    "jobs": {
+      "acidTango": {
+        "title": "Desarrollador Web y Mobile - Prácticas Universitarias",
+        "subtitle": "Acid Tango S.L.",
+        "description": "Realicé mis prácticas universitarias en Acid Tango, una empresa española especializada en el diseño y desarrollo de productos digitales y soluciones de software. Durante este periodo, participé en tres proyectos de la empresa, desempeñando el rol de Desarrollador Frontend en los dos primeros y de Desarrollador Mobile utilizando Android Studio en el último."
+      }
+    }
+  },
+  "projects": {
+    "title": "Proyectos",
+    "subtitle": "Trabajos realizados",
+    "industrialSimulation": {
+      "title": "Plataforma Full-Stack para Simulación Industrial y Detección de fugas",
+      "description": "Mi trabajo de Fin de Grado consistió en una plataforma Full-Stack para la simulación de una estación de servicio y detección de fugas mediante Machine Learning. Incluye una interfaz web para configurar y visualizar simulaciones, una CLI y soporte de comunicación mediante memoria, sockets y OPC-UA, permitiendo conectar sistemas simulados con controladoras físicas o virtuales."
+    }
+  },
+  "education": {
+    "title": "Educación",
+    "subtitle": "Formación académica",
+    "current": "Actualidad",
+    "items": {
+      "diginnova": "Programa Diginnova - FGULL (Fundación General de la Universidad de La Laguna)",
+      "computerEngineering": "Grado de Ingeniería Informática, Tecnologías de la Información - Universidad de La Laguna",
+      "highSchool": "Bachillerato de Ciencias Tecnológicas - IES Teobaldo Power"
+    }
+  },
+  "contact": {
+    "title": "Contacto",
+    "subtitle": "Hablemos",
+    "description": "¿Quieres charlar? Rellena el formulario y te respondo en menos de 24 horas",
+    "form": {
+      "name": "Nombre",
+      "namePlaceholder": "Tu nombre",
+      "email": "Email",
+      "emailPlaceholder": "Tu email",
+      "message": "Mensaje",
+      "messagePlaceholder": "Escribe aquí el mensaje",
+      "sending": "Enviando...",
+      "submit": "Enviar mensaje",
+      "emptyFields": "¡Hay campos vacíos en el formulario!",
+      "success": "¡Se ha enviado el mensaje con éxito!",
+      "error": "Ha ocurrido un error inesperado. Vuelve a intentarlo"
+    }
+  },
+  "links": {
+    "cv": "Ver currículum"
+  }
+}

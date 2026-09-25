@@ -2,15 +2,21 @@ import { Badge } from "../Badge/Badge";
 import { ButtonLink } from "../ButtonLink/ButtonLink";
 import { badgesProfile, contactsLink } from "../../data/data";
 import { TitleSection } from "../TitleSection/TitleSection";
+import { useTranslation } from "react-i18next";
 
 export function ProfileDescription() {
+
+  const { t: tProfile } = useTranslation("translation", {
+    keyPrefix: "hero.profileDescription"
+  })
+  const { t } = useTranslation()
 
   return (
     <div className="flex flex-col text-left w-auto max-w-xl gap-4 ">
 
       <div className="flex flex-col gap-2 mb-5">
-        <TitleSection title="Sobre mi" subtitle="Desarrollador Frontend y Backend" />
-        <p className="text-muted"> Ingeniero informático centralizado en desarrollo de aplicaciones web centradas en el usuario, combinando código limpio con interfaces bien pensadas. Me interesa construir productos que resuelvan problemas reales de forma elegante. bla bla bla</p>
+        <TitleSection title={tProfile("title")} subtitle={tProfile("subtitle")} />
+        <p className="text-muted">{tProfile("description")}</p>
       </div>
 
       <div className="mb-5">
@@ -23,7 +29,7 @@ export function ProfileDescription() {
 
       <div className="flex gap-2 flex-wrap">
         {contactsLink.map((contact) => (
-          <ButtonLink key={contact.text} text={contact.text} icon={contact.icon} href={contact.href} />
+          <ButtonLink key={contact.text} text={t(contact.text, contact.text)} icon={contact.icon} href={contact.href} />
         ))}
       </div>
 

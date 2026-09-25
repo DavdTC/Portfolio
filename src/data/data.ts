@@ -15,20 +15,20 @@ import { TypescriptIcon } from "../icons/TypescriptIcon"
 import loginImage from "../assets/tfg/login.png"
 import { FileIcon } from "../icons/FileIcon"
 
-export enum sectionId {
-  ABOUT_ME = "aboutMe",
-  EXPERIENCE = "experience",
-  PROJECTS = "projects",
-  EDUCATION = "education",
-  CONTACT = "contact"
+export const sectionId = {
+  ABOUT_ME: "aboutMe",
+  EXPERIENCE: "experience",
+  PROJECTS: "projects",
+  EDUCATION: "education",
+  CONTACT: "contact"
 }
 
 export const navItems = [
-  { id: "#" + sectionId.ABOUT_ME, label: "Sobre mi" },
-  { id: "#" + sectionId.EXPERIENCE, label: "Experiencia" },
-  { id: "#" + sectionId.PROJECTS, label: "Proyectos" },
-  { id: "#" + sectionId.EDUCATION, label: "Educación" },
-  { id: "#" + sectionId.CONTACT, label: "Contacto" }
+  { id: "#" + sectionId.ABOUT_ME, label: "navigation.aboutMe" },
+  { id: "#" + sectionId.EXPERIENCE, label: "navigation.experience" },
+  { id: "#" + sectionId.PROJECTS, label: "navigation.projects" },
+  { id: "#" + sectionId.EDUCATION, label: "navigation.education" },
+  { id: "#" + sectionId.CONTACT, label: "navigation.contact" }
 ]
 
 export const badgesProfile = [
@@ -50,15 +50,12 @@ export const contactsLink = [
   { text: "davidtito.det@gmail.com", icon: MailIcon, href: "mailto:davidtito.det@gmail.com" },
   { text: "www.linkedin.com/in/david-ezequiel-tolosa-cabalero", icon: LinkedinIcon, href: "https://www.linkedin.com/in/david-ezequiel-tolosa-cabalero" },
   { text: "+34 697341747", icon: PhoneIcon, href: "tel:+34697341747" },
-  { text: "Ver curriculum", icon: FileIcon, href: "/public/cv.pdf" }
+  { text: "links.cv", icon: FileIcon, href: "/public/cv.pdf" }
 ]
 
 export const projectsData = [{
-  title: "Plataforma Full-Stack para Simulación Industrial y Detección de fugas",
-  description: "Mi trabajo de Fin de Grado consistió en una plataforma Full-Stack para la simulación de una estación de servicio y detección de fugas mediante Machine Learning.\
-   Incluye una interfaz web para configurar y visualizar simulaciones, una CLI\
-    y soporte de comunicación mediante memoria, sockets y OPC-UA, permitiendo conectar \
-    sistemas simulados con controladoras físicas o virtuales.",
+  title: "projects.industrialSimulation.title",
+  description: "projects.industrialSimulation.description",
   href: "https://github.com/ElChancho/TFG-Simulacion",
   img: loginImage,
   badges: [
@@ -73,12 +70,9 @@ export const projectsData = [{
 ]
 
 export const experiencesJob = [{
-  title: "Desarrollador Web y Mobile - Prácticas Universitarias",
-  subtitle: "Acid Tango S.L.",
-  description: "Realicé mis prácticas universitarias en Acid Tango, una empresa española especializada en el diseño y desarrollo de productos \
-  digitales y soluciones de software. \
-  Durante este periodo, participé en tres proyectos de la empresa, desempeñando el rol de Desarrollador Frontend en los dos primeros y \
-  de Desarrollador Mobile utilizando Android Studio en el último.",
+  title: "experience.jobs.acidTango.title",
+  subtitle: "experience.jobs.acidTango.subtitle",
+  description: "experience.jobs.acidTango.description",
   startDate: new Date(2025, 9, 1),
   endDate: new Date(2025, 11, 1)
 }]
@@ -87,15 +81,15 @@ export const academic = [
   {
     startDate: new Date(2026, 8, 1),
     endDate: null,
-    title: "Programa Diginnova - FGULL (Fundación General de la Universidad de La Laguna)"
+    title: "education.items.diginnova"
   },
   {
     startDate: new Date(2021, 8, 1),
     endDate: new Date(2026, 5, 1),
-    title: "Grado de Ingeniería Informática, Tecnologías de la Información - Universidad de La Laguna"
+    title: "education.items.computerEngineering"
   }, {
     startDate: new Date(2019, 8, 1),
     endDate: new Date(2021, 5, 1),
-    title: "Bachillerato de Ciencias Tecnológicas - IES Teobaldo Power"
+    title: "education.items.highSchool"
   }
 ]
