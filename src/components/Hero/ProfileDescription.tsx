@@ -25,7 +25,6 @@ export function ProfileDescription() {
         {contactsLink.map((contact) => (
           <ButtonLink key={contact.text} text={contact.text} icon={contact.icon} href={contact.href} />
         ))}
-        <p>Aqui faltaría poner un link para descargar el CV</p>
       </div>
 
     </div>
