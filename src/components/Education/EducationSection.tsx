@@ -1,4 +1,4 @@
-import { academic } from "../../data/data";
+import { academic, sectionId } from "../../data/data";
 import { ContainerSection } from "../ContainerSection/ContainerSection";
 import { Section } from "../Section/Section";
 import { TitleSection } from "../TitleSection/TitleSection";
@@ -6,7 +6,7 @@ import { Education } from "./Education";
 
 export function EducationSection() {
   return (
-    <Section>
+    <Section id={sectionId.EDUCATION}>
       <ContainerSection>
         <TitleSection title="Educación" subtitle="Formación Académica" />
 

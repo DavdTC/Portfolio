@@ -1,4 +1,4 @@
-import { projectsData } from "../../data/data";
+import { projectsData, sectionId } from "../../data/data";
 import { ContainerSection } from "../ContainerSection/ContainerSection";
 import { Section } from "../Section/Section";
 import { TitleSection } from "../TitleSection/TitleSection";
@@ -6,7 +6,7 @@ import { ProjectCard } from "./ProjectCard";
 
 export function ProjectsSection() {
   return (
-    <Section>
+    <Section id={sectionId.PROJECTS}>
 
       <ContainerSection>
         <div className="flex flex-col gap-2">
