@@ -1,8 +1,10 @@
 import { useState } from "react";
 import { NavButton } from "../NavButton/NavButton";
 import { navItems } from "../../data/data";
+import { useTranslation } from "react-i18next";
 
 export function Header() {
+  const { t } = useTranslation()
   const [activeNav, setActiveNav] = useState(navItems[0].id)
 
   return (
@@ -12,7 +14,7 @@ export function Header() {
           {navItems.map((item) => (
             <NavButton
               key={item.id}
-              text={item.label}
+              text={t(item.label, item.label)}
               href={item.id}
               isClicked={activeNav === item.id}
               onClick={() => setActiveNav(item.id)}></NavButton>

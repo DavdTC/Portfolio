@@ -3,8 +3,10 @@ import { InputText } from "../InputText/InputText"
 import { InputTextArea } from "../InputTextArea/InputTextArea"
 import { SendIcon } from "../../icons/SendIcon"
 import emailjs from "@emailjs/browser"
+import { useTranslation } from "react-i18next"
 
 export function ContactForm() {
+  const { t } = useTranslation()
   const [form, setForm] = useState({ name: "", email: "", message: "" })
   const [info, setInfo] = useState({
     text: "",
@@ -21,10 +23,10 @@ export function ContactForm() {
   const [isLoading, setIsLoading] = useState<boolean>(false)
 
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: ChangeEvent<HTMLFormElement>) => {
     e.preventDefault()
     if (form.name.trim() == "" || form.email.trim() == "" || form.message.trim() == "") {
-      setInfo({ text: "¡Hay campos vacíos en el formulario!", type: "error" })
+      setInfo({ text: t("contact.form.emptyFields"), type: "error" })
       setTimeout(() => {
         setInfo({ text: "", type: "error" })
       }, 3000)
@@ -47,10 +49,10 @@ export function ContactForm() {
           publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY
         }
       )
-      setInfo({ text: "¡Se ha enviado el mensaje con éxito!", type: "success" })
+      setInfo({ text: t("contact.form.success"), type: "success" })
 
     } catch (e) {
-      setInfo({ text: "Ha ocurrido un error inesperado. Vuelva a intentarlo", type: "error" })
+      setInfo({ text: t("contact.form.error"), type: "error" })
 
     } finally {
       setIsLoading(false)
@@ -69,9 +71,9 @@ export function ContactForm() {
           <InputText
             id="name"
             name="name"
-            title="Nombre"
+            title={t("contact.form.name")}
             type="text"
-            placeholder="Tu nombre"
+            placeholder={t("contact.form.namePlaceholder")}
             value={form.name}
             onChange={handleChange}
           />
@@ -79,9 +81,9 @@ export function ContactForm() {
           <InputText
             id="email"
             name="email"
-            title="Email"
+            title={t("contact.form.email")}
             type="email"
-            placeholder="Tu email"
+            placeholder={t("contact.form.emailPlaceholder")}
             value={form.email}
             onChange={handleChange}
           />
@@ -90,8 +92,8 @@ export function ContactForm() {
         <InputTextArea
           id="message"
           name="message"
-          title="Mensaje"
-          placeholder="Escribe aquí el mensaje"
+          title={t("contact.form.message")}
+          placeholder={t("contact.form.messagePlaceholder")}
           value={form.message}
           onChange={handleChange}
         />
@@ -101,12 +103,12 @@ export function ContactForm() {
             {isLoading ? (
               <>
                 <div className="w-4 h-4 border-2 border-black/30 border-t-black rounded-full animate-spin" />
-                <span>Enviando...</span>
+                <span>{t("contact.form.sending")}</span>
               </>
             ) : (
               <>
                 <SendIcon className="w-4 h-4" />
-                <span>Enviar mensaje</span>
+                <span>{t("contact.form.submit")}</span>
               </>
             )}
 
