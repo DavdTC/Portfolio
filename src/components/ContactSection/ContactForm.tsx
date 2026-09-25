@@ -2,13 +2,14 @@ import { useState, type ChangeEvent } from "react"
 import { InputText } from "../InputText/InputText"
 import { InputTextArea } from "../InputTextArea/InputTextArea"
 import { SendIcon } from "../../icons/SendIcon"
+import emailjs from "@emailjs/browser"
 
 export function ContactForm() {
   const [form, setForm] = useState({ name: "", email: "", message: "" })
   const [info, setInfo] = useState({
     text: "",
-    type: "info" as "info" | "error" | "success"
-  }) 
+    type: "error" as "error" | "success"
+  })
 
   const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setForm({
@@ -23,9 +24,9 @@ export function ContactForm() {
   const handleSubmit = async (e) => {
     e.preventDefault()
     if (form.name.trim() == "" || form.email.trim() == "" || form.message.trim() == "") {
-      setInfo({text: "¡Hay campos vacíos en el formulario!", type: "error"})
+      setInfo({ text: "¡Hay campos vacíos en el formulario!", type: "error" })
       setTimeout(() => {
-        setInfo({text: "", type: "error"})
+        setInfo({ text: "", type: "error" })
       }, 3000)
 
       return
@@ -33,16 +34,29 @@ export function ContactForm() {
 
     try {
       setIsLoading(true)
-      await new Promise((resolve) => setTimeout(resolve, 2000))
-      console.log(form)
+      await emailjs.send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        {
+          title: form.name,
+          name: form.name,
+          email: form.email,
+          message: form.message
+        },
+        {
+          publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+        }
+      )
+      setInfo({ text: "¡Se ha enviado el mensaje con éxito!", type: "success" })
 
     } catch (e) {
-      setInfo({text: "Ha ocurrido un info inesperado. Vuelva a intentarlo", type: "error"})
-      setTimeout(() => {
-        setInfo({text: "", type: "error"})
-      }, 3000)
+      setInfo({ text: "Ha ocurrido un error inesperado. Vuelva a intentarlo", type: "error" })
+
     } finally {
       setIsLoading(false)
+      setTimeout(() => {
+        setInfo({ text: "", type: "error" })
+      }, 3000)
     }
 
   }
@@ -97,9 +111,14 @@ export function ContactForm() {
             )}
 
           </button>
-          {info && (
+          {info.type === "error" && (
             <span className="text-center text-red-500">
-              {info}
+              {info.text}
+            </span>
+          )}
+          {info.type === "success" && (
+            <span className="text-center text-primary">
+              {info.text}
             </span>
           )}
 
