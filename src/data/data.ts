@@ -15,6 +15,22 @@ import { TypescriptIcon } from "../icons/TypescriptIcon"
 import loginImage from "../assets/tfg/login.png"
 import { FileIcon } from "../icons/FileIcon"
 
+export enum sectionId {
+  ABOUT_ME = "aboutMe",
+  EXPERIENCE = "experience",
+  PROJECTS = "projects",
+  EDUCATION = "education",
+  CONTACT = "contact"
+}
+
+export const navItems = [
+  { id: "#" + sectionId.ABOUT_ME, label: "Sobre mi" },
+  { id: "#" + sectionId.EXPERIENCE, label: "Experiencia" },
+  { id: "#" + sectionId.PROJECTS, label: "Proyectos" },
+  { id: "#" + sectionId.EDUCATION, label: "Educación" },
+  { id: "#" + sectionId.CONTACT, label: "Contacto" }
+]
+
 export const badgesProfile = [
   { text: "Javascript", icon: JavascriptIcon },
   { text: "Typescript", icon: TypescriptIcon },

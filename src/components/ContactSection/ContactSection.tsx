@@ -1,3 +1,4 @@
+import { sectionId } from "../../data/data";
 import { ContainerSection } from "../ContainerSection/ContainerSection";
 import { Section } from "../Section/Section";
 import { TitleSection } from "../TitleSection/TitleSection";
@@ -6,7 +7,7 @@ import { ContactInfo } from "./ContactInfo";
 
 export function ContactSection() {
   return (
-    <Section>
+    <Section id={sectionId.CONTACT}>
       <ContainerSection >
         <div className="flex flex-col gap-2">
           <TitleSection title="Contacto" subtitle="Hablemos" />
