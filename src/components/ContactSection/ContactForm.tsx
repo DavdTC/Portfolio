@@ -65,9 +65,9 @@ export function ContactForm() {
 
 
   return (
-    <form onSubmit={handleSubmit} className="w-full">
+    <form onSubmit={handleSubmit} className="w-full mt-5 lg:mt-0">
       <div className="flex flex-col gap-4">
-        <div className="flex gap-2">
+        <div className="flex flex-wrap gap-2">
           <InputText
             id="name"
             name="name"
@@ -98,7 +98,7 @@ export function ContactForm() {
           onChange={handleChange}
         />
 
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-2 text-sm sm:text-md">
           <button type="submit" disabled={isLoading} className="bg-primary w-full flex gap-2 items-center justify-center rounded-lg p-2 text-black cursor-pointer hover:opacity-80 transition-all">
             {isLoading ? (
               <>

@@ -8,9 +8,9 @@ export function ProfileImage() {
   })
 
   return (
-    <div className="flex flex-col w-auto justify-center gap-2">
+    <div className="flex w-auto justify-center gap-2">
 
-      <div className="relative w-110">
+      <div className="relative w-90 xl:w-110">
         <div className="absolute bg-linear-to-b from-primary via-primary/40 to-background opacity-50 -z-1 scale-103 w-full h-full rounded-4xl"></div>
         <img src={profile} alt={t("alt")} className="rounded-4xl" />
 
