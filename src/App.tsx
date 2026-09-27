@@ -1,6 +1,7 @@
 import { ContactSection } from "./components/ContactSection/ContactSection"
 import { EducationSection } from "./components/Education/EducationSection"
 import { ExperienceSection } from "./components/Experience/ExperienceSection"
+import { Footer } from "./components/Footer/Footer"
 import { Header } from "./components/Header/Header"
 import { Hero } from "./components/Hero/Hero"
 import { ProjectsSection } from "./components/Projects/ProjectSection"
@@ -21,9 +22,7 @@ function App() {
         {/* Intentar hacer algún easter egg o algo? */}
       </main>
 
-      <footer>
-
-      </footer>
+      <Footer />
 
     </div>
   )
