@@ -15,7 +15,7 @@ export function ProjectsSection() {
           <TitleSection title={t("projects.title")} subtitle={t("projects.subtitle")}/>
 
         </div>
-        <div className="flex flex-col mt-5 gap-6">
+        <div className="flex lg:flex-col mt-5 gap-6">
           {projectsData.map((project) => (
             <ProjectCard
               key={project.title}

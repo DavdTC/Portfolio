@@ -16,7 +16,7 @@ export function ProfileDescription() {
 
       <div className="flex flex-col gap-2 mb-5">
         <TitleSection title={tProfile("title")} subtitle={tProfile("subtitle")} />
-        <p className="text-muted whitespace-pre-line">{tProfile("description")}</p>
+        <p className="text-sm lg:text-md text-muted whitespace-pre-line">{tProfile("description")}</p>
       </div>
 
       <div className="mb-5">

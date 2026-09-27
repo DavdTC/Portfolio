@@ -9,8 +9,8 @@ export function Header() {
 
   return (
     <header className="flex items-center justify-center h-full sticky top-10 z-1">
-      <nav className="border rounded-full px-2 py-1 bg-background-secondary/80 border-border backdrop-blur-md">
-        <ul className="flex gap-4">
+      <nav className="w-75 sm:w-auto border rounded-full px-2 py-1 bg-background-secondary/80 border-border backdrop-blur-md">
+        <ul className="flex flex-wrap justify-center lg:gap-4">
           {navItems.map((item) => (
             <NavButton
               key={item.id}

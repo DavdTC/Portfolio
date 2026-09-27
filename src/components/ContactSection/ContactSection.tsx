@@ -13,7 +13,7 @@ export function ContactSection() {
       <ContainerSection >
         <div className="flex flex-col gap-2">
           <TitleSection title={t("contact.title")} subtitle={t("contact.subtitle")} />
-          <div className="flex gap-2">
+          <div className="flex flex-col lg:flex-row gap-4 lg:gap-2">
             <ContactInfo />
             <ContactForm />
           </div>
