@@ -4,7 +4,7 @@ import { Section } from "../Section/Section";
 
 export function Footer() {
   return (
-    <Section id="">
+    <Section id="" animated={false}>
       <ContainerSection>
         <footer className="w-full flex flex-col gap-2">
           <hr className="border-border" />
