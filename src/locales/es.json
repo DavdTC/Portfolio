@@ -33,8 +33,12 @@
     "title": "Proyectos",
     "subtitle": "Trabajos realizados",
     "industrialSimulation": {
-      "title": "Plataforma Full-Stack para Simulación Industrial y Detección de fugas",
+      "title": "FuelSim - Plataforma Full-Stack para Simulación Industrial y Detección de fugas",
       "description": "Mi trabajo de Fin de Grado consistió en una plataforma Full-Stack para la simulación de una estación de servicio y detección de fugas mediante Machine Learning. Incluye una interfaz web para configurar y visualizar simulaciones, una CLI y soporte de comunicación mediante memoria, sockets y OPC-UA, permitiendo conectar sistemas simulados con controladoras físicas o virtuales."
+    },
+    "carshub": {
+      "title": "CarsHub - Plataforma Full-Stack para visualizar, gestionar y compartir coches",
+      "description": "Este proyecto fue realizado como trabajo final de una asignatura de la carrera y consistió en la creación de una página web ficticia, gestionando tanto el frontend como el backend, además de las bases de datos y la configuración mediante Docker. El proyecto se desarrolló en colaboración con otros dos compañeros de la carrera. Mi trabajo consistió en participar en ambas partes del desarrollo, adaptándome a las necesidades del proyecto en cada momento."
     }
   },
   "education": {
