@@ -30,11 +30,11 @@ export const sectionId = {
 }
 
 export const navItems = [
-  { id: "#" + sectionId.ABOUT_ME, label: "navigation.aboutMe" },
-  { id: "#" + sectionId.EXPERIENCE, label: "navigation.experience" },
-  { id: "#" + sectionId.PROJECTS, label: "navigation.projects" },
-  { id: "#" + sectionId.EDUCATION, label: "navigation.education" },
-  { id: "#" + sectionId.CONTACT, label: "navigation.contact" }
+  { id: sectionId.ABOUT_ME, label: "navigation.aboutMe" },
+  { id: sectionId.EXPERIENCE, label: "navigation.experience" },
+  { id: sectionId.PROJECTS, label: "navigation.projects" },
+  { id: sectionId.EDUCATION, label: "navigation.education" },
+  { id: sectionId.CONTACT, label: "navigation.contact" }
 ]
 
 export const badgesProfile = [

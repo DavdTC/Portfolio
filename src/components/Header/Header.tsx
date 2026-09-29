@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { NavButton } from "../NavButton/NavButton";
 import { navItems } from "../../data/data";
 import { useTranslation } from "react-i18next";
@@ -6,6 +6,33 @@ import { useTranslation } from "react-i18next";
 export function Header() {
   const { t } = useTranslation()
   const [activeNav, setActiveNav] = useState(navItems[0].id)
+
+  useEffect(() => {
+    const sections = navItems
+      .map((item) => document.getElementById(item.id))
+      .filter(Boolean);
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const visibleSection = entries
+          .filter((entry) => entry.isIntersecting)
+          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+
+        if (visibleSection) {
+          setActiveNav(visibleSection.target.id);
+        }
+      },
+      {
+        threshold: 0.3,
+      }
+    );
+
+    sections.forEach((section) => {
+      if (section) observer.observe(section);
+    });
+
+    return () => observer.disconnect();
+  }, [])
 
   return (
     <header className="flex items-center justify-center h-full sticky top-10 z-1">
@@ -15,7 +42,7 @@ export function Header() {
             <NavButton
               key={item.id}
               text={t(item.label, item.label)}
-              href={item.id}
+              href={"#" + item.id}
               isClicked={activeNav === item.id}
               onClick={() => setActiveNav(item.id)}></NavButton>
           ))}
