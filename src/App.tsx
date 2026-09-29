@@ -10,9 +10,8 @@ function App() {
 
   return (
     <div className="flex min-h-svh flex-col">
-
       <Header />
-
+      
       <main className="w-auto h-full flex flex-col">
         <Hero />
         <ExperienceSection />
