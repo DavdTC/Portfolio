@@ -12,7 +12,7 @@ export function ProfileDescription() {
   const { t } = useTranslation()
 
   return (
-    <div className="flex flex-col text-left w-auto max-w-xl gap-4 ">
+    <div className="flex flex-col text-left gap-4 ">
 
       <div className="flex flex-col gap-2 mb-5">
         <TitleSection title={tProfile("title")} subtitle={tProfile("subtitle")} />

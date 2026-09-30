@@ -13,10 +13,10 @@ export function EducationSection() {
         <TitleSection title={t("education.title")} subtitle={t("education.subtitle")} />
 
         {academic.map((acad) => (
-          <>
-            <Education key={acad.title} title={t(acad.title, acad.title)} startDate={acad.startDate} endDate={acad.endDate} />
+          <div key={acad.title}>
+            <Education title={t(acad.title, acad.title)} startDate={acad.startDate} endDate={acad.endDate} />
             <hr className="border-border mt-5" />
-          </>
+          </div>
         ))}
 
       </ContainerSection>

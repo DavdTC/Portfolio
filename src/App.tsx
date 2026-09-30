@@ -18,7 +18,6 @@ function App() {
         <ProjectsSection />
         <EducationSection />
         <ContactSection />
-        {/* Intentar hacer algún easter egg o algo? */}
       </main>
 
       <Footer />
