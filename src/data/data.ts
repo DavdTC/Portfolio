@@ -75,20 +75,20 @@ export const projectsData = [{
     { text: "Redis", icon: RedisIcon },
     { text: "Celery", icon: CeleryIcon }
   ]
-}, {
-  title: "projects.carshub.title",
-  description: "projects.carshub.description",
-  href: "",
-  img: carshubHome,
-  badges: [
-    { text: "Javascript", icon: JavascriptIcon },
-    { text: "Vue", icon: VueIcon },
-    { text: "NodeJS", icon: NodeJsIcon },
-    { text: "ExpressJS", icon: ExpressIcon },
-    { text: "MongoDB", icon: MongoDbIcon },
-    { text: "Docker", icon: DockerIcon }
-  ]
-}
+}, //{
+//   title: "projects.carshub.title",
+//   description: "projects.carshub.description",
+//   href: "",
+//   img: carshubHome,
+//   badges: [
+//     { text: "Javascript", icon: JavascriptIcon },
+//     { text: "Vue", icon: VueIcon },
+//     { text: "NodeJS", icon: NodeJsIcon },
+//     { text: "ExpressJS", icon: ExpressIcon },
+//     { text: "MongoDB", icon: MongoDbIcon },
+//     { text: "Docker", icon: DockerIcon }
+//   ]
+// }
 ]
 
 export const experiencesJob = [{

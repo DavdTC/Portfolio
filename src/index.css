@@ -44,10 +44,58 @@ html {
   .scrollbar-border::-webkit-scrollbar {
     width: 8px;
   }
-  
+
   .scrollbar-border::-webkit-scrollbar-thumb {
     background: var(--color-border);
     border-radius: 6px;
     cursor: default;
   }
+}
+
+@keyframes pig-message {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, 10px);
+  }
+
+  20% {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+
+  70% {
+    opacity: 1;
+    transform: translate(-50%, -5px);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -20px);
+  }
+}
+
+.animate-pig-message {
+  animation: pig-message 0.8s ease-out forwards;
+}
+
+@keyframes pig-destroy {
+  0% {
+    opacity: 1;
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  60% {
+    opacity: 0.8;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.animate-pig-destroy {
+  animation: pig-destroy 3s ease-in forwards;
 }
