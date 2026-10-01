@@ -1,0 +1,75 @@
+{
+  "navigation": {
+    "aboutMe": "About me",
+    "experience": "Experience",
+    "projects": "Projects",
+    "education": "Education",
+    "contact": "Contact"
+  },
+  "hero": {
+    "profileImage": {
+      "occupation": "Web Developer",
+      "name": "David Ezequiel Tolosa Cabalero",
+      "alt": "Photograph of David Ezequiel Tolosa Cabalero"
+    },
+    "profileDescription": {
+      "title": "About me",
+      "subtitle": "Frontend and Backend Developer",
+      "description": "Curious and motivated to keep learning more since I discovered this world. My first contact with programming was at the age of 12, when I created a small Java program to calculate the area of a rectangle using Eclipse. After that experience, I thought this was not for me because it seemed too complicated (it had been horrible for me).\n Many years later, I decided to fully pursue a degree in Computer Engineering. There I understood that this was truly what I wanted to do: solve problems in the most optimal way possible and see how ideas become reality. Although I have specialized in web development, I am always open to new areas. My goal is to continue growing as a professional and build an enriching future in this sector that I am truly passionate about."
+    }
+  },
+  "experience": {
+    "title": "Experience",
+    "subtitle": "Professional experience",
+    "jobs": {
+      "acidTango": {
+        "title": "Web and Mobile Developer - University Internship",
+        "subtitle": "Acid Tango S.L.",
+        "description": "I completed my university internship at Acid Tango, a Spanish company specialized in the design and development of digital products and software solutions. During this period, I participated in three company projects, working as a Frontend Developer on the first two and as a Mobile Developer using Android Studio on the last one."
+      }
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "Completed work",
+    "industrialSimulation": {
+      "title": "FuelSim - Full-Stack Platform for Industrial Simulation and Leak Detection",
+      "description": "My final degree project consisted of a Full-Stack platform for simulating a service station and detecting leaks using Machine Learning. It includes a web interface for configuring and visualizing simulations, a CLI, and communication support through memory, sockets, and OPC-UA, allowing simulated systems to connect with physical or virtual controllers."
+    },
+    "carshub": {
+      "title": "CarsHub - Full-Stack Platform for Viewing, Managing, and Sharing Cars",
+      "description": "This project was completed as the final assignment for a university course and consisted of creating a fictional website, managing the frontend and backend, as well as the databases and Docker configuration. The project was developed in collaboration with two other university classmates. My work involved participating in both areas of development and adapting to the project's needs at each stage."
+    }
+  },
+  "education": {
+    "title": "Education",
+    "subtitle": "Academic background",
+    "current": "Present",
+    "items": {
+      "diginnova": "Diginnova Program - FGULL (General Foundation of the University of La Laguna)",
+      "computerEngineering": "Bachelor's Degree in Computer Engineering, Information Technologies - University of La Laguna",
+      "highSchool": "Technological Sciences Baccalaureate - IES Teobaldo Power"
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Let's talk",
+    "description": "Would you like to chat? Fill out the form and I will reply within 24 hours",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Your name",
+      "email": "Email",
+      "emailPlaceholder": "Your email",
+      "message": "Message",
+      "messagePlaceholder": "Write your message here",
+      "sending": "Sending...",
+      "submit": "Send message",
+      "emptyFields": "There are empty fields in the form!",
+      "success": "The message was sent successfully!",
+      "error": "An unexpected error occurred. Please try again"
+    }
+  },
+  "links": {
+    "cv": "View resume"
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "navigation": {
+    "aboutMe": "Sobre mí",
+    "experience": "Experiencia",
+    "projects": "Proyectos",
+    "education": "Educación",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "profileImage": {
+      "occupation": "Desarrollador web",
+      "name": "David Ezequiel Tolosa Cabalero",
+      "alt": "Fotografía de David Ezequiel Tolosa Cabalero"
+    },
+    "profileDescription": {
+      "title": "Sobre mí",
+      "subtitle": "Desarrollador Frontend y Backend",
+      "description": "Curioso y motivado a aprender más desde que conocí este mundo. Mi primera toma de contacto fue a los 12 años, cuando realicé un pequeño programa en Java para calcular el área de un rectángulo utilizando Eclipse. Después de aquella pequeña experiencia, pensé que esto no era lo mío, me resultó demasiado complicado (había sido horrible para mí).\n Muchos años más tarde, me decidí por completo a entrar en la carrera de Ingeniería Informática. Allí entendí que esto era realmente lo que quería hacer. Solucionar problemas de la manera más óptima posible y ver cómo las ideas se convierten en algo real. Aunque me haya especializado en el desarrollo web, siempre estoy abierto a nuevas áreas. Mi objetivo es seguir creciendo como profesional y construir un futuro enriquecedor en este sector que realmente me apasiona."
+    }
+  },
+  "experience": {
+    "title": "Experiencia",
+    "subtitle": "Experiencia profesional",
+    "jobs": {
+      "acidTango": {
+        "title": "Desarrollador Web y Mobile - Prácticas Universitarias",
+        "subtitle": "Acid Tango S.L.",
+        "description": "Realicé mis prácticas universitarias en Acid Tango, una empresa española especializada en el diseño y desarrollo de productos digitales y soluciones de software. Durante este periodo, participé en tres proyectos de la empresa, desempeñando el rol de Desarrollador Frontend en los dos primeros y de Desarrollador Mobile utilizando Android Studio en el último."
+      }
+    }
+  },
+  "projects": {
+    "title": "Proyectos",
+    "subtitle": "Trabajos realizados",
+    "industrialSimulation": {
+      "title": "FuelSim - Plataforma Full-Stack para Simulación Industrial y Detección de fugas",
+      "description": "Mi trabajo de Fin de Grado consistió en una plataforma Full-Stack para la simulación de una estación de servicio y detección de fugas mediante Machine Learning. Incluye una interfaz web para configurar y visualizar simulaciones, una CLI y soporte de comunicación mediante memoria, sockets y OPC-UA, permitiendo conectar sistemas simulados con controladoras físicas o virtuales."
+    },
+    "carshub": {
+      "title": "CarsHub - Plataforma Full-Stack para visualizar, gestionar y compartir coches",
+      "description": "Este proyecto fue realizado como trabajo final de una asignatura de la carrera y consistió en la creación de una página web ficticia, gestionando tanto el frontend como el backend, además de las bases de datos y la configuración mediante Docker. El proyecto se desarrolló en colaboración con otros dos compañeros de la carrera. Mi trabajo consistió en participar en ambas partes del desarrollo, adaptándome a las necesidades del proyecto en cada momento."
+    }
+  },
+  "education": {
+    "title": "Educación",
+    "subtitle": "Formación académica",
+    "current": "Actualidad",
+    "items": {
+      "diginnova": "Programa Diginnova - FGULL (Fundación General de la Universidad de La Laguna)",
+      "computerEngineering": "Grado de Ingeniería Informática, Tecnologías de la Información - Universidad de La Laguna",
+      "highSchool": "Bachillerato de Ciencias Tecnológicas - IES Teobaldo Power"
+    }
+  },
+  "contact": {
+    "title": "Contacto",
+    "subtitle": "Hablemos",
+    "description": "¿Quieres charlar? Rellena el formulario y te respondo en menos de 24 horas",
+    "form": {
+      "name": "Nombre",
+      "namePlaceholder": "Tu nombre",
+      "email": "Email",
+      "emailPlaceholder": "Tu email",
+      "message": "Mensaje",
+      "messagePlaceholder": "Escribe aquí el mensaje",
+      "sending": "Enviando...",
+      "submit": "Enviar mensaje",
+      "emptyFields": "¡Hay campos vacíos en el formulario!",
+      "success": "¡Se ha enviado el mensaje con éxito!",
+      "error": "Ha ocurrido un error inesperado. Vuelve a intentarlo"
+    }
+  },
+  "links": {
+    "cv": "Ver currículum"
+  }
+}
