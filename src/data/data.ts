@@ -57,7 +57,7 @@ export const contactsLink = [
   { text: "davidtito.det@gmail.com", icon: MailIcon, href: "mailto:davidtito.det@gmail.com" },
   { text: "www.linkedin.com/in/david-ezequiel-tolosa-cabalero", icon: LinkedinIcon, href: "https://www.linkedin.com/in/david-ezequiel-tolosa-cabalero" },
   { text: "+34 697341747", icon: PhoneIcon, href: "tel:+34697341747" },
-  { text: "links.cv", icon: FileIcon, href: "/public/cv.pdf" }
+  { text: "links.cv", icon: FileIcon, href: `${import.meta.env.BASE_URL}cv.pdf` }
 ]
 
 export const projectsData = [{
